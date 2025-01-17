@@ -33,7 +33,7 @@ body {
 }
 
 .login__welcome {
-    background-color: var(--color-light-blue);
+    background: linear-gradient(to bottom right, #97b9d2, #A3B9D5, #7698b6);
     color: var(--color-white);
     padding: 2em;
 }
@@ -61,6 +61,11 @@ body {
     background: transparent;
     text-decoration: none;
     font-size: 0.87em;
+}
+
+.login__welcome-button:hover {
+    background-color: #accae0;
+    transition: background-color 0.5s;
 }
 
 .login__form {
@@ -100,6 +105,11 @@ body {
     font-size: 0.90em;
     display: inline-block;
     width: auto;
+}
+
+.login__form-button:hover {
+    background-color: #8facc5;
+    transition: background-color 0.5s;
 }
 
 .person {

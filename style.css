@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --color-white: #ffffff;
+    --color-blue: #7698b6;
+    --color-light-blue: #97b9d2;
+    --color-grey: #a6a6a6; 
+    --color-light-grey: #f1f1f1;
+    --font: "Open Sans", serif;
+}
+
+body {
+    background: url(assets/backgroundImg.png);
+    font-family: var(--font);
+    margin: 0;
+    height: 100vh;
+}
+
+.login__container {
+    text-align: center;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login__container-card {
+    display: flex;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.login__welcome {
+    background-color: var(--color-light-blue);
+    color: var(--color-white);
+    padding: 2em;
+}
+
+.login__welcome-icon {
+    width: 7em;
+    margin: 5em 0 -2em 0;
+}
+
+.login__welcome-title {
+    color: var(--color-white);
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.login__welcome-text {
+    font-size: 0.83em;
+}
+
+.login__welcome-button {
+    border: 1px solid var(--color-white);
+    border-radius: 24px;
+    padding: 0.5em 4em;
+    color: var(--color-white);
+    background: transparent;
+    text-decoration: none;
+    font-size: 0.87em;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-white);
+    padding: 5em;
+}
+
+.login__form-title {
+    color: var(--color-blue);
+    font-size: 2.21em;
+    margin: 5px;
+}
+
+.login__form-item {
+    background-color: var(--color-light-grey);
+    border: none;
+    border-radius: 24px;
+    color: var(--color-grey);
+    padding: 1em 4em;
+    outline: none;
+}
+
+.login__form-item::placeholder {
+    color: var(--color-grey);
+}
+
+.login__form-button {
+    margin-top: 1em;
+    border-radius: 24px;
+    padding: 0.5em 2em;
+    color: var(--color-white);
+    background-color: var(--color-blue);
+    text-decoration: none;
+    font-size: 0.90em;
+    display: inline-block;
+    width: auto;
+}
+
+.person {
+    background-image: url("assets/iconPerson.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 10px;
+}
+
+.email {
+    background-image: url("assets/iconEmail.png");
+    background-repeat: no-repeat;
+    background-size: 27px;
+    background-position: 10px;
+}
+
+.password {
+    background-image: url("assets/iconPassword.png");
+    background-repeat: no-repeat;
+    background-size: 33px;
+    background-position: 10px;
+}
